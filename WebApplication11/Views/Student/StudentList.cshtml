@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "StudentList";
+}
+
+<h2>StudentList</h2>
+
+ <b> List of Students </b>
+  @{ 
+      foreach(var student in ViewBag.student)
+      {
+          @student.Id 
+          <br />
+          @student.Name
+      }
+  }
+

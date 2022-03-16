@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebApplication11.Models.Student>
+@{
+    ViewBag.Title = "StudentList1";
+}
+
+<h2>StudentList1</h2>
+   <b> List of studnets </b>
+
+ @{ 
+     foreach(var student in Model)
+     {
+         @student.Id
+         <br />
+         @student.Name
+     }
+ }
+
